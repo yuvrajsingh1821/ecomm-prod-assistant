@@ -1,10 +1,10 @@
 
 import streamlit as st
-#from prod_assistant.etl.data_scrapper import FlipkartScraper
-#from prod_assistant.etl.data_ingestion import DataIngestion
+from prod_assistant.etl.data_scrapper import FlipkartScraper
+from prod_assistant.etl.data_ingestion import DataIngestion
 import os
 
-#flipkart_scraper = FlipkartScraper()
+flipkart_scraper = FlipkartScraper("data")
 output_path = "data/product_reviews.csv"
 st.title("📦 Product Review Scraper")
 
